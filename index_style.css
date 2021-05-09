@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: arial, sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.headerItems {
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.header a {
+  text-decoration: none;
+  color: #5f6368;
+}
+
+.header a:hover {
+  text-decoration: underline;
+}
+
+#AppsMenu {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+#AppsMenu:hover {
+  background-color: gainsboro;
+  box-shadow: 0 0 30px gainsboro;
+  border-radius: 50px;
+}
+
+#profilePic {
+  width: 35px;
+  height: 40px;
+  cursor: pointer;
+  margin-right: 40px;
+}
+
+#profilePic:hover {
+  box-shadow: 0 0 10px gainsboro;
+  border-radius: 50px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 15vh;
+}
+
+.GoogleImage img {
+  height: 120px;
+}
+
+.GoogleImage {
+  margin-bottom: 30px;
+}
+
+.searchBox {
+  width: 640px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid gainsboro;
+  border-radius: 30px;
+  padding: 0 20px;
+  margin-bottom: 53px;
+}
+
+.searchBox:hover {
+  box-shadow: 0 0 10px 0 gainsboro;
+}
+
+#Mic {
+  cursor: pointer;
+}
+
+#Gsearch {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  margin: 0 5px;
+  font-family: arial, sans-serif;
+}
+
+.GSearchButtonsContainer {
+  display: flex;
+}
+
+.Sbtn {
+  background-color: #f8f9fa;
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+  min-width: 54px;
+  padding: 0 20px;
+  margin: 0 4px;
+  font-size: 14px;
+}
+
+.Sbtn:hover {
+  cursor: pointer;
+  box-shadow: 0 0 3px gainsboro;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  background-color: #f2f2f2;
+}
+
+ul > a {
+  text-decoration: none;
+  color: #808c99;
+  padding: 0 18px;
+}
+
+ul > a:hover {
+  text-decoration: underline;
+}
+
+#FooterLeft {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 20px;
+  align-items: center;
+}
+
+#FooterRight {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+  align-items: center;
+}
+
+@media (max-width: 650px) {
+  .searchBox {
+    width: 95vw;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-height: 570px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .content {
+    margin-bottom: 200px;
+  }
+
+  .footer {
+    position: relative;
+  }
+}
